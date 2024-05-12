@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{%static 'media/image/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+    <link rel="stylesheet" href="{% static '/css/notice.css' %}">
+    <title>Steve Rebrand</title>
+</head>
+<body>
+  
+    
+     {% if request.user.is_authenticated %}
+     <header>
+      <div class="edit__header" >
+        <div class="tittle">
+        <h1><a href="/">Edit Page</a></h1>
+        </div>
+        <div>
+          <a href="{% url 'logout' %}" class="button fill" cursor="link">Logout</a>
+          <a href="{% url 'upload'  %}" id="add" class="button fill">ADD</a>
+       </div>
+     </header>
+     
+   
+<hr>
+<div  id="information">     
+      {% for message in messages %}
+          <p>{{message}}</p>
+      {% endfor %}
+  </div>
+     <!--==================== PORJECTS CATEGORY ====================-->
+     <section class="section category">
+      <h2 class="section__title">My Projects <br> <span>Category</span> </h2>
+
+      <div class="category__container container grid">
+      {% for work in works %}
+          <div class="category__data">
+              <img src="{{ work.image.url }}" alt="" class="category__img">
+              <h3 class="category__title">{{work.title}}</h3>
+              <p class="category__description">{{ work.description }}</p>
+              {% if request.user.is_authenticated %}
+              <div class="edit__link">
+                <a  href="{% url 'update' work.id %}">edit</a>
+              <a href="{% url 'delete' work.id %}">delete</a>
+              </div>
+              {% endif %}
+            </div>
+          
+      {% endfor%}
+      </div>
+  </section>
+
+  <div class="delete">
+{% block content %}
+{% endblock content %}
+{% else %}
+    <h1>Not logged in</h1>
+    <a href="{% url 'login' %}">login</a>
+{% endif %}
+</div>
+<script src="{% static 'script/notice.js' %}"></script>
+    
+</body>
+</html>

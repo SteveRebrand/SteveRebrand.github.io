@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/media/image/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/media/image/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/media/image/favicon-16x16.png">
+        <link rel="manifest" href="/static/media/image/site.webmanifest">
+        <link rel="mask-icon" href="/static/media/image/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="/static/css/index.css">
+        <link rel="stylesheet" href="/static/css/notice.css">
+        <title>Steve Rebrand Website</title>
+    </head>
+    <body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="/static/media/image/android-chrome-192x192.png" alt="" class="nav__logo-img">
+                Steve Rebrand
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact!" class="nav__link">Contact</a>
+                    </li>
+
+                    <a href="#" class=" button--ghost">
+                        <button class="transparent" >
+                            <label class="ui-switch">
+                            <input class="btn-toggle" type="checkbox">
+                            <div class="slider">
+                            <div class="circle"></div>
+                            </div>
+                        </label>
+                        </button>           
+                    </a>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="/static/media/image/mouse 1 wire white.png" alt="" class="nav__img">
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+        </nav>
+    </header>
+    <!-- <div  id="information">     
+        {% for message in messages %}
+            <p>{{message}}</p>
+        {% endfor %}
+    </div>
+    <div  id="toast"><div id="img">info</div>
+    <div id="desc">
+    
+        {% for message in messages %}
+            <p>{{message}}</p>
+        {% endfor %}
+    
+    </div>
+    </div> -->
+    <main class="main">
+        <section class="home container mt-2" id="home">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__data">
+                                <h3 class="home__subtitle">FULLSTACK DEVELOPER </h3>
+                                <h1 class="home__title">
+                                    WELCOME <br> <span>TO MY</span>  
+                                            <br> WEBSITE!!</h1>
+                                <p class="home__description"> 
+                                    Hi, my name is <span>"Bico Steve"</span>. 
+                                    You can use one of the two or just call me 
+                                    <span>Muganda.</span> 
+                                    I am  passionate about a lot of things but 
+                                    programming obviously 
+                                    takes the top stop.
+                                </p>
+
+                                <div class="home__buttons">
+                                    <a href="#contact" class="button fill" cursor="link">Contact Me</a>
+                                    <ul class="menu">
+                                        <li class="li">
+                                            <a class="gold" href="#" data-bubble="coming-soon" 
+                                            href="#" class="button--link button--flex">Download CV 
+                                            <i class='bx bx-right-arrow-alt button__icon'></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home__group">
+                                <img src="/static/media/image/floating mouse & keyboard.png" alt="" class="home__img">
+                                <div class="indicator">  
+                                    <div class="home__indicator"></div>
+                                    <div class="home__indicator2"></div>
+                                </div>
+                                
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Best Quote by "Ralph Waldo"</h4>
+                                    <span class="home__details-subtitle">A foolish consistency is the 
+                                        hobgoblin of little minds</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__data">
+                                <h3 class="home__subtitle">JUST MORE ABOUT ME</h3>
+                                <h1 class="home__title">MY <br> <span>  PROGRAMMING </span><br> JOURNEY </h1>
+                                <p class="home__description">It has never been easy, it's never is for anyone. 
+                                    I started of HTML,CSS and JavaScript, then JAVA and then started learning PYTHON ( which 
+                                    I'm more comfortable in but still learning ). Currently I a fullstack developer (Django,Node.js).
+                                </p>
+
+                                <div class="home__buttons">
+                                    <a href="#contact" class="button fill" cursor="link">Contact Me</a>
+                                    <ul class="menu">
+                                        <li class="li">
+                                            <a class="gold" href="#" data-bubble="coming-soon" 
+                                            href="#" class="button--link button--flex">Download CV 
+                                            <i class='bx bx-right-arrow-alt button__icon'></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home__group">
+                                <img src="/static/media/image/vintage computer.png" alt="" class="home__img">
+                                <div class="indicator">  
+                                    <div class="home__indicator"></div>
+                                    <div class="home__indicator2"></div>
+                                </div>
+                                
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Maybe I should Remind You</h4>
+                                    <span class="home__details-subtitle">A journey of a thousand miles 
+                                                        begins with a single step "just think about it"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__data">
+                                <h3 class="home__subtitle">MORE ABOUT ME </h3>
+                                <h1 class="home__title">EXPERIENCE AND <br> <span> EMPLOYMENT  </span><br> </h1>
+                                <p class="home__description">Apart from development I also do Web Design (Figma). 
+                                    I am currently a Freelancer and a Fullstack Dev at Freelance Soko and an IT 
+                                    Volunteer at Duara Inclusion Initiative (non-governmental organization)  
+                                </p>
+
+                                <div class="home__buttons">
+                                    <a href="#contact" class="button fill" cursor="link">Contact Me</a>
+                                    <ul class="menu">
+                                        <li class="li"><a class="gold" href="#" data-bubble="coming-soon" 
+                                            href="#" class="button--link button--flex">Download CV 
+                                            <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home__group">
+                                <img src="/static/media/image/landing-3d.png" alt="" class="home__img">
+                                <div class="indicator">  
+                                <div class="home__indicator"></div>
+                                <div class="home__indicator2"></div>
+                                </div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Just Me to Me</h4>
+                                    <span class="home__details-subtitle">A smooth sea never made a skilled 
+                                        sailor
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="section about" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">About <br> <span>Steve  Rebrand</span></h2>
+                    <p class="about__description">I was born and raised in Kenya, and I 
+                        wanted to pursue a career in sports. Anyway, I am a fourth year 
+                        computer science student at Africa Nazarene, and I enjoy Software 
+                        Development and learning new things. Steve Rebrand is more like 
+                        my small company name, it's a name that I came up with when I 
+                        wanted to start a new chapter in my programming life, be rest 
+                        assured that I will change the name when I start the next chapter.
+                    </p>
+                    <a href="#contact" class="button fill" cursor="link">Contact Me</a>
+                </div>
+
+                <img src="/static/media/image/mouse 1.png" alt="" class="about__img">
+            </div>
+        </section>
+
+    
+        <section id="projects" class="section category">
+            <h2 class="section__title">My Projects <br> <span>Category</span> </h2>
+
+            <div class="trick__container container project grid">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/static/media/projects/atravel.png" id="modalImg1" class="card-img-top clickable" alt="...">
+                        <a href="{{work.link}}">
+                        <div class="card-body">
+                          <h5 class="card-title">ATravel <span class="date">May 2024</span></h5>
+                          <p class="card-text">Web App for foreign tourist looking forward to travel 
+                            to Africa.The Website allows you to book everything from transport to accommodation.
+                            It is an all in one app and the very first project for the G3Start app, currently 
+                            under production. 
+                        </p>
+                        </div>
+                        </a>
+                      </div>
+                     <div class="card" style="width: 18rem;">
+                        <img src="/static/media/projects/kipfit.png" id="modalImg2" class="card-img-top clickable" alt="...">
+                        <a href="{{work.link}}">
+                        <div class="card-body">
+                          <h5 class="card-title">Kip-Fit <span class="date">April 2024</span></h5>
+                          <p class="card-text">Website for Kip-Fit fitness team and gym, the website
+                             is meant to help them run their services and also serve their foreign
+                              customers.Has a merchandise shop,custom user profile with posts and custom
+                               nutrition.The other section is the Kip-Fit tv where users can live stream
+                                live sessions or watch pre recorded videos based on their level of subscription. 
+                        </p>
+                        </div>
+                        </a>
+                      </div>
+                    <div class="card" style="width: 18rem;">
+                    <img src="/static/media/projects/geeks.png" id="modalImg3" class="card-img-top clickable" alt="...">
+                    <a href="{{work.link}}">
+                    <div class="card-body">
+                        <h5 class="card-title">Geeks <span class="date">September 2023</span></h5>
+                        <p class="card-text">A portfolio of portfolios, it a 
+                        website that allows developers o upload projects they have 
+                        accomplished link with other developers, share knowledge and 
+                        necessary links.The second phase will allows project tracking 
+                        with kanbans and other tools.
+                    </p>
+                    </div>
+                    </a>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/static/media/projects/estatenesux.png" id="modalImg4" class="card-img-top clickable" alt="...">
+                        <a href="{{work.link}}">
+                        <div class="card-body">
+                            <h5 class="card-title">EstateNexus <span class="date">December 2023</span></h5>
+                            <p class="card-text">Web App for property owners tenants and managers, custom profile
+                                for all users to track payments. The managers can send or schedule texts to tenants,
+                                live chat section and allows different modes of payment.
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/static/media/projects/alternative.png" id="modalImg5" class="card-img-top clickable" alt="...">
+                        <a href="{{work.link}}">
+                        <div class="card-body">
+                        <h5 class="card-title">NazLink <span class="date">December 2022</span></h5>
+                        <p class="card-text">Just a simple Django project that allows different users
+                                to create rooms based on certain topics that people can join and discuss.
+                                My very first build and my most exciting build.
+                        </p>
+                        </div>
+                        </a>
+                    </div>
+                    </div>
+        </section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+
+        <section  class="section trick" id="trick">
+            <h2 class="section__title">Language Skill Level </h2>
+
+            <div class="trick__container container grid">
+                <div class="trick__content" >
+                    <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 77"></div>
+                    <h3 class="trick__title">HTML CSS</h3>
+                    <span class="trick__subtitle">Currently</span>
+                    <span class="trick__price">html 5</span>
+                    <button class="button trick__button">
+                        <i class='fab fa-html5 trick__icon'></i>
+                    </button>
+                </div>
+
+                <div class="trick__content" >
+                    <div role="progressbar" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100" style="--value: 27"></div>
+                    <h3 class="trick__title">JavaScript</h3>
+                    <span class="trick__subtitle">Started Learning ReactNative</span>
+                    <span class="trick__price">react & vanilla</span>
+                    <button class="button trick__button">
+                        <i class='fab fa-js-square trick__icon'></i>
+                    </button>
+                </div>
+
+                <div class="trick__content" >
+                    <div role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="--value: 57"></div>
+                    <h3 class="trick__title">NodeJs</h3>
+                    <span class="trick__subtitle">Currently</span>
+                    <span class="trick__price">express framework</span>
+                    <button class="button trick__button">
+                        <i class='fab fa-js-square trick__icon'></i>
+                    </button>
+                </div>
+
+                
+
+                <div class="trick__content" >
+                    <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 67"></div>
+                    <h3 class="trick__title">PYTHON</h3>
+                    <span class="trick__subtitle">Currently</span>
+                    <span class="trick__price">pure python </span>
+                    <button class="button trick__button">
+                        <i class='fab fa-python trick__icon'></i>
+                    </button>
+                </div>
+
+                <div class="trick__content" >
+                    <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 79"></div>
+                    <h3 class="trick__title">DJANGO</h3>
+                    <span class="trick__subtitle">Currently</span>
+                    <span class="trick__price">Django 5.0</span>
+                    <button class="button trick__button">
+                        <i class='bx bxl-django trick__icon '></i>
+                    </button>
+                </div>
+
+                <div class="trick__content" >
+                    <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 80"></div>
+                    <h3 class="trick__title">JAVA</h3>
+                    <span class="trick__subtitle">not so much</span>
+                    <span class="trick__price">J2SE</span>
+                    <button class="button trick__button">
+                        <i class='fab fa-java trick__icon'></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="section new" id="new">
+        <h2 class="section__title">Tools & Books</h2>
+
+            <div class="new__container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">python</div>
+                            <img src="/static/media/image/web 1.png" alt="" class="new__img">
+                            <h3 class="new__title">pycharm & intellij</h3>
+                            <span class="new__subtitle">I mainly use it for pure python codes but not 
+                                for backend</span>
+                            
+                            <div class="new__prices">
+                                <span class="new__price">IDE</span>
+                                <!-- <span class="new__discount">$29.99</span> -->
+                            </div>
+
+                            <button class="button new__button">
+                                <i class='fab fa-python new__icon'></i>
+                            </button>
+                        </div>
+
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">IDEs</div>
+                            <img src="/static/media/image/laptop with book cloud.png" alt="" class="new__img">
+                            <h3 class="new__title">visual studio</h3>
+                            <span class="new__subtitle">I use it for both backend and frontend<br>(Django & NodeJs), because it's 
+                                free and comes with a lot of useful extensions it also easy to use</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">Code Editor</span>
+                                <!-- <span class="new__discount">$21.99</span> -->
+                            </div>
+
+                            <button class="button new__button">
+                                <i class='fab fa-internet-explorer new__icon'></i>
+                            </button>
+                        </div>
+
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">JavaScript</div>
+                            <img src="/static/media/image/laptop with books leaves.png" alt="" class="new__img">
+                            <h3 class="new__title">some of the books</h3>
+                            <span class="new__subtitle">fullstack ReactNative <br> by Anthony Accomazzo Developing 
+                                iOS and Android Apps with JavaScript 
+                            </span>
+
+                            <div class="new__prices">
+                                <span class="new__price">Books</span>
+                                <!-- <span class="new__discount">$9.99</span> -->
+                            </div>
+
+                            <button class="button new__button">
+                                <i class='fas fa-book'></i>
+                            </button>
+                        </div>
+
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Data</div>
+                            <img src="/static/media/image/laptop & book.png" alt="" class="new__img">
+                            <h3 class="new__title">SPSS</h3>
+                            <span class="new__subtitle">various statistical analyses, 
+                                including descriptive statistics, inferential statistics 
+                                mostly used doing freelance projects  </span>
+
+                            <div class="new__prices">
+                                <span class="new__price">Books</span>
+                                <!-- <span class="new__discount">$44.99</span> -->
+                            </div>
+
+                            <button class="button new__button">
+                                <i class='fas fa-book'></i>
+                            </button>
+                        </div>
+
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Java</div>
+                            <img src="/static/media/image/books 1.png" alt="" class="new__img">
+                            <h3 class="new__title">some of the books</h3>
+                            <span class="new__subtitle">Head first Java <br>JavaScript & JQuery: Interactive 
+                                Front-End Web Development</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">Books</span>
+                                <!-- <span class="new__discount">$12.99</span> -->
+                            </div>
+
+                            <button class="button new__button">
+                                <i class='fas fa-book new__icon'></i>
+                            </button>
+                        </div>
+
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Web</div>
+                            <img src="/static/media/image/desktop book.png" alt="" class="new__img">
+                            <h3 class="new__title">some of the websites I use </h3>
+                            <span class="new__subtitle">YouTube( for tutorials ), StackOverflow, Generative AI <br> w3 schools( when starting to learn )</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">websites</span>
+                                <!-- <span class="new__discount">$14.99</span> -->
+                            </div>
+
+                            <button class="button new__button">
+                                <i class='fab fa-youtube new__icon'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="swiper-pagination"></div>
+
+        </section>
+
+        <section id="contact!" id="contact" class="section discount">
+                <div class="discount__container container grid">
+                    <div class="discount__data">
+                        <h2 class="discount__title">You have a project  <br> 
+                            that you want me to do or help you with <br><span>no prob</span>
+                            <br> just contact me <br>
+                            and when I am free 
+                            <br>be rest assured that I will get back to you. 
+                            <br> I have shared some of my contact details below.
+                        </h2>
+                            <a href="#contact1" class="button fill" cursor="link">Contact Me</a>
+                        </div>
+
+                    <img src="/static/media/image/contact 2.png" alt="" class="discount__img">
+                </div>
+        </section>
+
+        <section id="contact1" class="section newsletter">
+            <div class="newsletter__container container">
+                <h2 class="section__title">Contact Me</h2>
+                <p class="newsletter__description">
+                    For project Collab's, tips finding, payed projects or even jobs
+                    Feel free to contact me and...you know tell me anything, just try to keep it professional.
+                </p>
+
+                <form name="contactForm" class="newsletter__form" action="https://formspree.io/f/meqydgve"
+                method="POST">
+                    <input name="name" type="name" maxlength="100" id="id_name" required type="text" placeholder="Enter your name" class="newsletter__input">
+                    <input name="email" type="email" maxlength="100" id="id_email" required type="text" placeholder="Enter your email" class="newsletter__input">
+                    <input name="subject" type="subject" maxlength="100" id="id_subject" required type="text" placeholder="Enter the subject" class="newsletter__input">
+                        <textarea name="message" maxlength="2000" col="40" rows="10" id="id_message" required type="text" name="" id="" cols="30" rows="10" 
+                        placeholder="message here" class="newsletter__textarea">
+                        </textarea>
+                    <button   type="submit" class="button fill" cursor="link">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+       
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="/static/media/image/android-chrome-192x192.png" 
+                    alt="" class="footer__logo-img">
+                    Steve Rebrand.
+                </a>
+
+                <p class="footer__description">A web developer, student, 
+                    <br> rugby player & I also love  books on history.</p>
+                
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/bico-101-steve/" target="_blank" class="footer__social-link">
+                        <i class='fab fa-linkedin'></i>
+                    </a>
+                    <a href="https://www.instagram.com/steve_bico001/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram-alt' ></i>
+                    </a>
+                    <a href="https://twitter.com/Stevei02807085" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="https://github.com/Bico-Steve101" target="_blank" class="footer__social-link">
+                        <i class='fab fa-github' ></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">About</h3>
+                
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Phone: 0757838398</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#new" class="footer__link">Resources</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Front & back-end dev</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Bug fixing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Support</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">My Team</h3>
+                
+                <!-- <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Our mission</a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+
+        <span class="footer__copy"><a href="edit">&#169;</a> Steve Rebrand | All rights reserved | 2023 <br></span>
+
+        <img src="/static/media/image/best_mechanical-keyboard-isolated-3d-rendering_419924-418-removebg-preview.png" alt="" class="footer__img-one">
+        <img src="/static/media/image/wire.png" alt="" class="footer__img-three">
+        <img src="/static/media/image/phone 1.png" alt="" class="footer__img-two">
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>        
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Send the form data to EmailJS
+            emailjs.sendForm('service_97ifnb6', 'template_7f5b0zk', this)
+                .then(function(response) {
+                    alert('Your message has been sent successfully!');
+                }, function(error) {
+                    alert('Oops! Something went wrong. Please try again later.');
+                    console.error('Error sending email:', error);
+                });
+        });
+
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const newSwiper = new Swiper(".new-swiper", {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 5000, // Adjust the delay (in milliseconds) as needed
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    speed: 1000,
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const homeSwiper = new Swiper(".home-swiper", {
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    effect: 'slide', // Set the effect to 'slide' for smooth transition
+                    speed: 1000, // Adjust the speed of the transition (in milliseconds)
+                });
+            });
+
+        </script>
+        
+        <script>// Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal
+            var img = document.getElementsByClassName('clickable');
+            var modalImg = document.getElementById("img01");
+            for (let i = 0; i < img.length; i++) {
+                img[i].onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script> 
+        
+        <script src="/static/script/scrollreveal.min.js"></script>
+
+        <script src="/static/script/swiper-bundle.min.js"></script>
+        
+        <script src="/static/script/main.js"></script>
+        <script src="/static/script/notice.js"></script>
+        <script src="/static/script/mode.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+

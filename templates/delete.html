@@ -1,0 +1,15 @@
+{% extends 'edit.html' %}
+{% load static %}
+    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+    <title>Steve Rebrand</title>
+    <link rel="shortcut icon" href="{%static 'media/image/favicon.ico' %}" type="image/x-icon">
+
+    {% block content %}
+<h1>Delete Project</h1>
+<p>Please!! Don't delete <span class="title">{{work.title}}</span>  the project if you are not Authorized to</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <button class="button fill" type="submit">Submit</button>
+</form>
+{% endblock content %}

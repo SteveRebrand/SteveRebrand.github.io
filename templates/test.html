@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Rebrand</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.scss' %}">
+</head>
+<style>
+</style>
+{% include 'navbar.html' %}
+<body>
+  <button class="mouse-cursor-gradient-tracking">
+    <span>Hover me</span></button>
+  {% if messages %}
+            {% for message in messages %}
+                <p>{{message}}</p>
+            {% endfor %}
+        {% endif %}
+<div>
+
+ 
+    <h1>Hello World</h1>
+    <a href="{% url 'login' %}">login</a>
+
+
+    <section  class="cards-wrapper">
+    {% for work in works %}
+        <div class="card-grid-space">
+          <div class="num">{{ work.count }}</div>
+          <a class="card" href="" style="--bg-img: url({{ work.image.url }})">
+            <div>
+              <h1>{{ work.title }}</h1>
+              <p>{{ work.description }}</p>
+              <div class="tags">
+                <div class="tag">{{ work.whencreated}}</div>
+              </div>
+            </div>
+          </a>
+        </div>
+    {% endfor  %}
+       
+    </section>
+
+      <section id="contact">
+        <h2>second contact</h2>
+        <div>
+            <form name="contactForm" action="" method="post" onsubmit="return validateForm()">
+                {% csrf_token %}
+                <p><label for="id_name">Name:</label>
+                    <input type="text" name="name" maxlength="100" id="id_name" required>
+                </p>
+    
+                <p><label for="id_mail">Mail:</label>
+                    <input type="mail" name="email" maxlength="100" id="id_email" required>
+                </p>
+                
+               <p> <label for="id_subject">Subject:</label>
+                <input type="text" name="subject" maxlength="100" id="id_subject" required>
+               </p>
+    
+                <p>
+                    <label for="id_message">Message:</label>
+                <textarea type="text" name="message" maxlength="2000" col="40" rows="10" id="id_message" required></textarea>
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</div>
+<script src="{% static 'script/home.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+.tittle{
+  margin-left: 5px;
+}
+#toast {
+    visibility: hidden;
+    max-width: 50px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+#information {
+  /* visibility: hidden; */
+  max-width: 500px;
+  height: 50px;
+  /*margin-left: -125px;*/
+  margin: auto;
+  /* background-color: #333; */
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+
+  position: fixed;
+  z-index: 1;
+  left: 0;right:0;
+  top: 120px;
+  font-size: 17px;
+  white-space: nowrap;
+}
+#toast #img{
+  width: 50px;
+  height: 50px;
+    
+    float: left;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    box-sizing: border-box;
+
+    
+    background-color: #111;
+    color: #fff;
+}
+#information p{
+  width: 500px;
+  height: 50px;
+    
+    float: left;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    box-sizing: border-box;
+
+    
+    background-color: #111;
+    color: #fff;
+}
+#toast #desc{
+
+    
+    color: #fff;
+   
+    padding: 16px;
+    
+    overflow: hidden;
+  white-space: nowrap;
+}
+#information #inform{
+
+    
+  color: #fff;
+ 
+  padding: 16px;
+  
+  overflow: hidden;
+white-space: nowrap;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes expand {
+    from {min-width: 50px} 
+    to {min-width: 350px}
+}
+
+@keyframes expand {
+    from {min-width: 50px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes stay {
+    from {min-width: 350px} 
+    to {min-width: 350px}
+}
+
+@keyframes stay {
+    from {min-width: 350px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 60px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 60px; opacity: 0;}
+}
+
+
+/* ====download cv popup==== */
+.menu {
+    display:inline-block;
+    margin:0 -.5em 1.5em;
+    box-shadow:0.12em 0.12em 0 rgba(40,40,40,.2);
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    font-size:1em;
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+  
+  .menu li {
+    float:left;
+    border-left:0.063em solid #a6c6cd;
+    border-right:0.063em solid #6ca1ac;
+  }
+  
+  .menu a {
+    display:block;
+    padding:0 1em;
+    line-height:2.5em;
+    position:relative;
+    font-weight:bold;
+    text-decoration:none;
+    color:#ffef14;
+    background-color:#86B2BB;
+    /* text-shadow:0 0.063em 0 #a6c6cd; */
+  }
+  
+  .menu a:hover, .menu a:active, .menu a:focus {
+    color:#eee;
+    text-shadow:0.063em 0.063em 0 #547177;
+
+  }
+  
+  .menu a[data-bubble]:after {
+    content:attr(data-bubble);
+    position:absolute;
+     top:0;
+    right:0.5em;
+    height:1.5em;
+    line-height:1.5em;
+    padding:0 .46em;
+    text-align:center;
+    text-shadow:0 0.063em 0 rgba(0,0,0,.2);
+    background-color:#eee;
+    color:#364652;
+    box-shadow:0 0.063em 0.063em rgba(0,0,0,.2);
+    border-radius:4em;
+    z-index:-1;
+    -webkit-transform: translateZ(0);/*Prevents text flicker*/
+    will-change: transform;
+
+  }
+  
+  a.gold[data-bubble]:after {
+    background-color:gold;
+  }
+  
+  
+  .menu a:hover[data-bubble]:after, .menu a:active[data-bubble]:after, .menu a:focus[data-bubble]:after {
+    -webkit-animation:ease bubbleover .4s;
+    animation:ease bubbleover .4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    top:-1.25em; /* If pseudo animation not supported [see https://css-tricks.com/transitions-and-animations-on-css-generated-content/], simple hover fallback happens*/
+    z-index:1;
+  }
+  
+  @-webkit-keyframes bubbleover {
+    0%   {
+      -webkit-transform:translate(0, 1em);
+      z-index:-1
+      }
+    50% {
+      -webkit-transform:translate(0, -.5em);
+      z-index:-1
+    } 
+    100% {
+      -webkit-transform:translate(0, 0);
+      z-index:1;
+      }
+  }
+  
+  @keyframes bubbleover {
+    0%   {
+      top:0;
+      transform:translate(0, 0);
+      z-index:-1;
+      }
+    50% {
+      transform:translate(0, -12px);
+      z-index:-1
+      } 
+    100% {
+      transform:translate(0, 6px);
+      z-index:1;
+      }
+  }
